@@ -1,19 +1,17 @@
 import React from 'react'
 import Head from 'next/head'
-import Navigation from '../components/Navigation'
-import { BaseLayout } from '../components/BaseLayout'
+import BaseLayout from '../components/BaseLayout'
 
 export default function About() {
   return (
-    <>
+    <div>
       <Head>
-        <title>SouthBayDevs - About</title>
+        <title>SouthBay Devs - About</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <BaseLayout>
-        <Navigation />
         <h1>About</h1>
       </BaseLayout>
-    </>
+    </div>
   )
 }

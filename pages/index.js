@@ -1,21 +1,26 @@
 import React from 'react'
 import Head from 'next/head'
-import Navigation from '../components/Navigation'
-import { BaseLayout } from '../components/BaseLayout'
+import BaseLayout from '../components/BaseLayout'
 
-const Home = () => (
-  <>
-    <Head>
-      <title>SouthBayDevs</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
-    <BaseLayout>
-      <Navigation />
-      <h1>SouthBayDevs</h1>
-    </BaseLayout>
-  </>
-)
-
-Home.title = 'SouthBayDevs'
-
-export default Home
+export default function Index() {
+  return (
+    <div>
+      <Head>
+        <title>southbay devs</title>
+      </Head>
+      <BaseLayout>
+        <div
+          style={{
+            display: 'flex',
+            height: '100%',
+            alignItems: 'center',
+            justifyContent: 'center',
+            margin: '1rem'
+          }}
+        >
+          <h1>We're setting up the first event</h1>
+        </div>
+      </BaseLayout>
+    </div>
+  )
+}

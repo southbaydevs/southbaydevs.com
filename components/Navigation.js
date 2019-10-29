@@ -1,15 +1,24 @@
 import React from 'react'
 import Link from 'next/link'
+import Logo from './Logo'
 
-const Navigation = () => (
-  <div>
-    <Link href="/">
-      <a>Home</a>
-    </Link>
-    <Link href="/about">
-      <a>About</a>
-    </Link>
-  </div>
-)
-
-export default Navigation
+export default function Navigation() {
+  return (
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        margin: '1rem'
+      }}
+    >
+      <Logo />
+      {/* <div style={{ display: 'flex', flexDirection: 'row' }}>
+        <Link href="/about" style={{ marginLeft: '1rem' }}>
+          About
+        </Link>
+      </div> */}
+    </div>
+  )
+}
