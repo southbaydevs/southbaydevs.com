@@ -1,20 +1,15 @@
 {
   "name": "southbaydevs.com",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:southbaydevs/southbaydevs.com.git",
-  "author": "<djstein@ncsu.edu>",
-  "license": "MIT",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "next",
+    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "export": "next export"
+    "start": "next start"
   },
   "dependencies": {
-    "isomorphic-unfetch": "^3.0.0",
-    "next": "^9.1.1",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0"
+    "next": "9.1.1",
+    "react": "16.11.0",
+    "react-dom": "16.11.0"
   }
 }
